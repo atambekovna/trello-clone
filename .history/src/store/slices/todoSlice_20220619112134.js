@@ -1,0 +1,15 @@
+const initialState = {
+    tasks: []
+}
+
+const authSlice = createSlice({
+    name: 'task',
+    initialState: initialState,
+    reducers: {
+        setTasks(state){
+            state.email = action.payload.email
+            state.token = action.payload.token
+            state.id = action.payload.id
+        },
+    },
+})
